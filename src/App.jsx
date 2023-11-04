@@ -2,6 +2,7 @@ import TopLinks from "./components/TopLinks";
 import Header from "./components/Header";
 import ColorfulLine from "./components/ColorfulLine";
 import MenuBar from "./components/MenuBar";
+import Opportunities from "./components/Opportunities";
 
 export default function App() {
   const topLinkItems = [
@@ -35,6 +36,8 @@ export default function App() {
       <ColorfulLine />
       {/* MENU BAR */}
       <MenuBar items={menuItems} />
+      {/* APPORTUNITIES */}
+      <Opportunities />
     </>
   );
 }

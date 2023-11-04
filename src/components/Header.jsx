@@ -60,7 +60,7 @@ function HeaderButtons({ isAuthenticated, onLogin, onLogout }) {
       {/* GİRİŞ YAP / ÇIKIŞ YAP */}
       {isAuthenticated ? (
         <button
-          className="flex flex-row border-2 rounded-md border-gray-500"
+          className="flex flex-row pe-2 border-2 rounded-md border-gray-500"
           onClick={onLogout}
         >
           <div className="py-2 px-3">
@@ -73,7 +73,7 @@ function HeaderButtons({ isAuthenticated, onLogin, onLogout }) {
         </button>
       ) : (
         <button
-          className="flex flex-row border-2 rounded-md border-gray-500"
+          className="flex flex-row pe-2 border-2 rounded-md border-gray-500"
           onClick={onLogin}
         >
           <div className="py-2 px-3">
