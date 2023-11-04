@@ -1,6 +1,6 @@
 export default function headerLogo() {
   return (
-    <div className="flex flex-col float-left w-auto items-end px-32 justify-end pt-1 ">
+    <div className="flex flex-col float-left w-auto items-end pe-16 justify-end pt-1 ">
       <svg
         width="191"
         height="34"

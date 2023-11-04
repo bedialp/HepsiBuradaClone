@@ -1,4 +1,4 @@
-export default function colorfulLine() {
+export default function ColorfulLine() {
   return (
     <div className="grid grid-cols-7 w-screen pt-4">
       <div className="col-span-3 h-2 bg-premium"></div>
