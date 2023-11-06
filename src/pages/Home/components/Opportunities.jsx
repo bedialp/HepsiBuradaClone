@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { options } from "../assets/opportunitesData";
+import { opportunitiesItem } from "../assets/opportunitesData";
 
 function Opportunities() {
-  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [selectedOption, setSelectedOption] = useState(opportunitiesItem[0]);
   const bgUrl =
     selectedOption.bgSrc ??
     "https://images.hepsiburada.net/banners/s/0/1920-540/backgroundImage2121_20231027102437.jpeg";
 
   const handleOptionChange = (key) => {
-    const chosenOption = options.find((option) => option.key === key);
+    const chosenOption = opportunitiesItem.find((option) => option.key === key);
     setSelectedOption(chosenOption);
   };
 
@@ -49,7 +49,7 @@ const Selector = ({ children, htmlFor }) => (
 
 const SelectorGroup = ({ selectedKey, handleOptionChange }) => (
   <ul className="flex flex-row justify-center max-w-[75vw] w-full gap-6">
-    {options.map(({ key, label }) => (
+    {opportunitiesItem.map(({ key, label }) => (
       <li key={key} className="relative">
         <input
           className="peer sr-only"

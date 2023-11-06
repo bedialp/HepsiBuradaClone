@@ -1,4 +1,4 @@
-export const options = [
+export const opportunitiesItem = [
     {
       key: "marka günleri",
       label: "Marka Günleri",
